@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font: 200 4em/1.2 "Segoe UI";
+    text-transform: uppercase;
+}
+
+h2 {
+    font: 400 2em/1.2 "Segoe UI";
+}
+
+
+
+/**************************************
+    II-a: Containers
+**************************************/
+
+.card {
+    background-color: #fff;
+    border-radius: 0.375rem;
+    box-shadow: 5px 5px 25px rgba(46, 61, 73, 0.2);
+    margin: 0.2rem;
+    padding: 30px;
+}
+
+.logo {
+    width: 10%;
+    min-width: 48px;
+    height: auto;
+}
+
+/* .link {
+    min-width: 48px;
+    min-height: 48px;
+} */
+
+.link-image {
+    max-width: 100%;
+}
+
+.link {
+    /* margin: 10px auto; */
+    width: 33.3%;
+    margin: 0.5rem;
+}
+
+
+
+/**************************************
+    II-b: Wrappers
+**************************************/
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.featured-work {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-work-container {
+    display: flex;
+    max-width: 100%;
+    /* flex-wrap: wrap; */
+}
+
+.header {
+    display: flex;
+}
+
+
+
+
+
+/**************************************
+    Media queries
+**************************************/
+
+@media screen and (min-width: 550px) {
+    .link {
+        width: 100%;
+    }
+}

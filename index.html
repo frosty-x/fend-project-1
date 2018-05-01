@@ -1,20 +1,59 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <html>
 
 <head>
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Megrim">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div>Header</div>
+	<div class="container">
+		<header class="header card">
+			<div class="header-logo">
+				<img class="logo" src="img/udacity.svg">
+			</div>
+			<div class="header-text">
+				Test text
+			</div>
+		</header>
 
-    <script src="js/designs.js"></script>
+
+
+		<div class="splash">
+			<img class="splash-image" src="img/splash.jpg">
+		</div>
+
+
+
+		<div class="featured-work card">
+			<div class="title">
+				<h2>Featured Work</h2>
+			</div>
+			<div class="featured-work-container">
+				<div class="link link1">
+					<img class="link-image link-image-appify" src="img/thumb-appify.jpg">
+					<h3>Appify</h3>
+					<p>https://github.com/udacity/Appify/</p>
+				</div>
+				<div class="link link2">
+					<img class="link-image link-image-sunflower" src="img/thumb-sunflower.jpg">
+					<h3>Sunflower</h3>
+					<p>https://github.com/udacity/Sunflower/</p>
+				</div>
+				<div class="link link3">
+					<img class="link-image link-image-bokeh" src="img/thumb-bokeh.jpg">
+					<h3>Bokeh</h3>
+					<p>https://github.com/udacity/Bokeh/</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/designs.js"></script>
 </body>
 
 </html>
