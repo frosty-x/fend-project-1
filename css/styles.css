@@ -1,9 +1,7 @@
-div, .header, .splash, .work {
-    /* border: 1px solid black; */
-}
-
 .container {
-    /* max-width: 300px; */
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: 1000px;
 }
 
 * {
@@ -15,11 +13,4 @@ div, .header, .splash, .work {
 
 .header-info {
     font-family: 'Raleway', sans-serif;
-    text-align: right;
-  text-transform: uppercase;
-}
-
-.logo {
-    max-width: 80px;
-    max-height: 80px;
 }
