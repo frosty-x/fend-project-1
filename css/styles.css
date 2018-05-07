@@ -1,7 +1,6 @@
-.container {
-    margin-bottom: 40px;
-    margin-top: 40px;
-    max-width: 1000px;
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 * {
@@ -11,6 +10,36 @@
     -webkit-transition: all .5s ease-in-out;
 }
 
-.header-info {
-    font-family: 'Raleway', sans-serif;
+.container {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    max-width: 1000px;
 }
+
+.logo {
+    max-height: 100px;
+}
+
+/* h1 {
+    font-size: 3.75rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1.25rem;
+} */
+
+html { font-size: 1rem; }
+
+@media (min-width: 576px) {
+    html { font-size: 1.25rem; }
+}
+@media (min-width: 768px) {
+    html { font-size: 1.5rem; }
+}
+@media (min-width: 992px) {
+    html { font-size: 1.75rem; }
+}
+/* @media (min-width: 1200px) {
+    html { font-size: 2rem; }
+} */
