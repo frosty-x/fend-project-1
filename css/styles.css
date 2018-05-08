@@ -1,45 +1,93 @@
+html {
+    /* font-size: 1rem; */
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+    color: #2d3c49;
 }
 
-* {
-    transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
+html, .logo {
+    transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
 }
 
 .container {
     margin-bottom: 40px;
     margin-top: 40px;
     max-width: 1000px;
+    min-width: 275px;
 }
 
 .logo {
-    max-height: 100px;
+    height: 127px;
+    /* margin-bottom: 20px; */
 }
 
-/* h1 {
-    font-size: 3.75rem;
-    font-weight: 100;
+.align {
+    text-align: right;
 }
 
-h2 {
-    font-size: 1.25rem;
-} */
+hr {
+    height: 3px;
+    background-color: #7d97ad;
+}
 
-html { font-size: 1rem; }
 
-@media (min-width: 576px) {
-    html { font-size: 1.25rem; }
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 359.98px) {
+    html {
+        font-size: 0.6em;
+    }
+    .logo {
+        height: 70px;
+    }
 }
-@media (min-width: 768px) {
-    html { font-size: 1.5rem; }
+
+@media screen and (min-width: 360px) and (max-width: 575.98px) {
+    html {
+        font-size: 0.8em;
+    }
 }
-@media (min-width: 992px) {
-    html { font-size: 1.75rem; }
+
+@media screen and (max-width: 575.98px) {
+    .align {
+        text-align: center;
+    }
+    .logo {
+        /* padding-bottom: 1.875rem; */
+    }
 }
-/* @media (min-width: 1200px) {
-    html { font-size: 2rem; }
-} */
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .logo {
+        height: 91px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 1.2em;
+    }
+    .logo {
+        height: 108px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 1.4em;
+    }
+}
