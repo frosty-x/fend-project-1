@@ -40,6 +40,20 @@
   II: Styles
 **************************************/
 
+/* Formatting for links */
+a {
+    color: var(--color-2-dark);
+    font: 0.8em Lato;
+    /* padding: 40px; */
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-1-blue);
+    /* opacity: 0.2; */
+    text-decoration: none;
+}
+
 /* Base font formatting; shorthand not used because it is set in Bootstrap */
 body {
     color: var(--color-2-dark);
@@ -53,21 +67,30 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-/* Formatting for links */
-a {
-    color: var(--color-2-dark);
-    font: 0.8em Lato;
-    text-decoration: none;
-}
-
 
 
 /**************************************
   III: Behavior
 **************************************/
 
+/* Transitions to add style to link hover */
+a {
+    transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
 /* Transitions to make font resizing smooth */
-html, .logo {
+html {
+    transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+/* Transitions to make image resizing smooth */
+.logo {
     transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
@@ -84,6 +107,11 @@ html, .logo {
 hr {
     background-color: var(--color-3-light);
     height: 3px;
+}
+
+.work-item,
+.splash {
+    box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
 }
 
 /* Center headers on smaller screens */
@@ -125,21 +153,21 @@ hr {
 
 /* Small screens >= 360px and < 576px */
 @media screen and (min-width: 360px) and (max-width: 575.98px) {
-    html {
-        font-size: 0.9em;
-    }
     a {
         font-size: 1em;
+    }
+    html {
+        font-size: 0.9em;
     }
 }
 
 /* Everything under 576px */
 @media screen and (max-width: 575.98px) {
-    .align {
-        text-align: center;
-    }
     hr {
         height: 1px;
+    }
+    .align {
+        text-align: center;
     }
 }
 
@@ -176,6 +204,6 @@ hr {
 /* Everything 992px and above */
 @media screen and (min-width: 992px) {
     html {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 }
