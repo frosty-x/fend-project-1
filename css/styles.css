@@ -1,20 +1,97 @@
-html {
-    /* font-size: 1rem; */
+/******************************************************************************
+  MASTER STYLESHEET
+
+
+
+  INFORMATION
+  Project...................Build a Portfolio Site
+  Purpose...................Udacity Front-End Nanodegree Program
+                            Project 1
+  Creator...................Ryan Delk
+  Last Change...............May 9, 2018
+
+
+
+  CONTENTS
+  I.    Global...............Globally-available variables and config
+  II.   Styles...............All text styles
+  III.  Behavior.............Transitions
+  IV.   Other................Various element spacing and sizing
+  V.    Media................Media queries and breakpoints
+
+******************************************************************************/
+
+
+
+/**************************************
+  I: Global
+**************************************/
+
+/* Defining color palette to be used throughout CSS */
+:root {
+    --color-1-blue: #02b3e4;
+    --color-2-dark: #2d3c49;
+    --color-3-light: #7d97ad;
 }
 
+
+
+/**************************************
+  II: Styles
+**************************************/
+
+/* Base font formatting; shorthand not used because it is set in Bootstrap */
 body {
+    color: var(--color-2-dark);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    color: #2d3c49;
 }
 
+/* Formatting for "Featured" headline */
+.featured {
+    color: var(--color-3-light);
+    font-family: 'Lato', sans-serif;
+}
+
+/* Formatting for links */
+a {
+    color: var(--color-2-dark);
+    font: 0.8em Lato;
+    text-decoration: none;
+}
+
+
+
+/**************************************
+  III: Behavior
+**************************************/
+
+/* Transitions to make font resizing smooth */
 html, .logo {
-    transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
+    transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
+
+
+/**************************************
+  IV: Other
+**************************************/
+
+/* Style for header separator */
+hr {
+    background-color: var(--color-3-light);
+    height: 3px;
+}
+
+/* Center headers on smaller screens */
+.align {
+    text-align: right;
+}
+
+/* Constraining the page */
 .container {
     margin-bottom: 40px;
     margin-top: 40px;
@@ -22,70 +99,81 @@ html, .logo {
     min-width: 275px;
 }
 
+/* Default height for Udacity logo */
 .logo {
     height: 127px;
-    /* margin-bottom: 20px; */
-}
-
-.align {
-    text-align: right;
-}
-
-hr {
-    height: 3px;
-    background-color: #7d97ad;
 }
 
 
 
+/**************************************
+  V: Media
+**************************************/
 
-
-
-
-
-
-
-
-
+/* Everything under 360px */
 @media screen and (max-width: 359.98px) {
     html {
-        font-size: 0.6em;
+        font-size: 0.7em;
+    }
+    a {
+        font-size: 1.2em;
     }
     .logo {
         height: 70px;
     }
 }
 
+/* Small screens >= 360px and < 576px */
 @media screen and (min-width: 360px) and (max-width: 575.98px) {
     html {
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+    a {
+        font-size: 1em;
     }
 }
 
+/* Everything under 576px */
 @media screen and (max-width: 575.98px) {
     .align {
         text-align: center;
     }
-    .logo {
-        /* padding-bottom: 1.875rem; */
+    hr {
+        height: 1px;
     }
 }
 
+/* Medium screens >= 576px and < 768px */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+    a {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 3em;
+    }
     .logo {
         height: 91px;
     }
 }
 
+/* Everything under 768px */
+@media screen and (max-width: 767.98px) {
+    .featured {
+        text-align: center;
+    }
+}
+
+/* Medium screens >= 768px and < 992px */
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
     html {
-        font-size: 1.2em;
+        font-size: 1.125em;
     }
     .logo {
         height: 108px;
     }
 }
 
+/* Everything 992px and above */
 @media screen and (min-width: 992px) {
     html {
         font-size: 1.4em;
