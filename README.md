@@ -1,7 +1,5 @@
 # Portfolio Site
 
-## Contents
-
 ## Information
 
 This is the first project for Udacity's Front-End Nanodegree program.
